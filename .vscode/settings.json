@@ -10,6 +10,8 @@
         "mkrescue",
         "mulitboot",
         "resb",
-        "temos"
+        "spaceslice",
+        "temos",
+        "timeslice"
     ]
 }

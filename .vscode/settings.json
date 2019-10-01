@@ -6,6 +6,7 @@
         "Virtualisation",
         "bootable",
         "bootloader",
+        "crosvm",
         "kustom",
         "mkrescue",
         "mulitboot",

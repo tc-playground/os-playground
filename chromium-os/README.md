@@ -14,5 +14,7 @@
 
 * [Design Docs](http://www.chromium.org/chromium-os/chromiumos-design-docs)
 
+* [Developer Guide](https://chromium.googlesource.com/chromiumos/docs/+/master/developer_guide.md)
+
 * [Chromium - Google Git](https://chromium.googlesource.com)
 

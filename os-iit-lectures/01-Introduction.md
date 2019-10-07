@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to OS, its Roles & Types
 
 ## Notes
 
@@ -38,4 +38,4 @@
 
 ## References
 
-1. [Introduction to OS, its Roles & Types](https://www.youtube.com/watch?v=k51934LHz3k&t=567s)
+* [Introduction to OS, its Roles & Types](https://www.youtube.com/watch?v=k51934LHz3k&t=567s)

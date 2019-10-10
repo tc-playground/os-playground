@@ -10,6 +10,8 @@
 
    2. Device hardware recognises CPU requests to their own address ranges.
 
+---
+
 ### Hardware Addresses
 
 - There are 3 types of `hardware address`
@@ -74,7 +76,7 @@
 
    4. Address ranges defined by Standards and/or `BIOS` or `OS` (`Plug and Play`).
 
-   * **IBM/PC RAM Layout**
+   * **IBM PC RAM Layout**
 
      ```
      +--------------------------------- <= 0xFFFFFFFF (4 GB)
@@ -96,7 +98,9 @@
      +--------------------------------- <= 0x00000000
      ```
 
-### Motherboard Bus Architecture
+---
+
+### IBM PC Motherboard Bus Architecture
 
 ![Motherboard Bus](_02-motherboard.png)
 
@@ -115,6 +119,61 @@
 7. `North Bridge` attached to `South Bridge` via `PCI bus`.
 
 8. `South Bridge` attached to `ISA`, `IDE`, `USB`, etc.
+
+---
+
+### x86 Processor Architecture
+
+```
+15     8,7     0    16bit 32bit 64bit
+ +------+------+
+ |  AH  |  AL  |    AX    EAX   RAX    General Purpose
+ +------+------+
+ |  BH  |  BL  |    BX    EBX   RBX    General Purpose
+ +------+------+
+ |  CH  |  CL  |    CX    ECX   RCX    General Purpose
+ +------+------+
+ |  DH  |  DL  |    DX    EDX   RDX    General Purpose
+ +------+------+
+ |     BP      |    Base Pointer Register
+ +-------------+
+ |     SI      |    Stack Index Pointer Register
+ +-------------+
+ |     DI      |    Destination Pointer Register
+ +-------------+
+ |     SP      |    Stack Pointer Register
+ +-------------+
+ |     IP      |    Instruction Pointer Register
+ +-------------+
+ |     CS      |    Code Segment Register
+ +-------------+
+ |     SS      |    Stack Segment Register
+ +-------------+
+ |     DS      |    Data Segment Register
+ +-------------+
+ |     ES      |    Extra Segment Register
+ +------+------+
+
+1. General Purpose Registers - AX, BX, CX, DX.
+
+2. Pointer Registers - BP, SI, DI, SP, IP.
+
+   NB: BP - Points to a frame in the stack ('stack frame').
+       SP - Points to the bottom of the stack.
+
+3. Instruction Pointer Register - IP.
+
+   NB: Points to the instruction being executed.
+
+4. Segment Registers - CS, SS, DS, ES.
+
+
+Real Mode Memory Access - (SegmentBase << 4) + OffSet
+
+     NB: Multiply required address by 16 and add offset.
+
+     NB: Real mode is pre bootloader in x86 architectures.
+```
 
 ---
 
@@ -143,5 +202,4 @@
 * [South Bridge](https://en.wikipedia.org/wiki/Southbridge_(computing))
 
 * [AGP bus - Wikipedia](https://en.wikipedia.org/wiki/Accelerated_Graphics_Port) - Legacy
-
 

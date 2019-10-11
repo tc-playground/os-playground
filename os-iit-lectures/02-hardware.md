@@ -175,6 +175,8 @@ Real Mode Memory Access - (SegmentBase << 4) + OffSet
      NB: Real mode is pre bootloader in x86 architectures.
 ```
 
+> The x86 architecture has always been `backward compatible`.
+
 ---
 
 ## References
